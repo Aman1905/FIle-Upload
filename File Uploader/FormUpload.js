@@ -15,8 +15,8 @@ const FormUpload = () => {
   }
 
   const handleFileChange = (props) => (event) => {
-      console.log(event.target.value[0])
-    setValues({...values, [props] : event.target.value[0]})
+      console.log(event.target.files[0]);
+   setValues({...values, [props] :  event.target.files[0] })
     console.log(values)
   }
  
